@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Mail til praktikvirksomheder</title>
   <style>
     body {
       font-family: Helvetica, Arial, Sans-Serif;
@@ -12,6 +12,15 @@
     }
     h1  {
       text-align: center;
+    }
+    nav {
+      background-color: #000;
+    }
+    nav a {
+      color: #fff;
+    }
+    nav a:visited {
+      color: #fff;
     }
     #resultatDK,
     #resultatEN {
@@ -24,15 +33,18 @@
 </head>
 <body>
 
-  <p><a href="index.html">Næste brev</a></p>
+  <nav><a href="index.html">Nyt brev</a></nav>
 
   <h1>Dansk</h1>
   <div id="resultatDK"></div>
+  <nav><a href="index.html">Nyt brev</a></nav>
+
 
   <hr>
 
   <h1>English</h1>
   <div id="resultatEN"></div>
+    <nav><a href="index.html">Nyt brev</a></nav>
 
   <script>
   // henter mentors og studentens navne
