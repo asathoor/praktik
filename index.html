@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Helvetica, Arial, Sans-Serif;
+      font-size: small;
+    }
+    h1  {
+      text-align: center;
+    }
+    #resultatDK,
+    #resultatEN {
+      position: relative;
+      width: 75ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <p><a href="index.html">Næste brev</a></p>
+
+  <h1>Dansk</h1>
+  <div id="resultatDK"></div>
+
+  <hr>
+
+  <h1>English</h1>
+  <div id="resultatEN"></div>
+
+  <script>
+  // henter mentors og studentens navne
+  let mentor = prompt('Mentors navn')
+  let student = prompt('Studentens navn')
+
+  // opretter dansk tekst
+  resultatDK.innerHTML = `
+  <p>Kære ${mentor},</p>
+
+  <p>Jeg vil gerne takke dig for at tilbyde ${student} en praktikplads og være en vigtig del af uddannelsen af en multimediedesigner.</p>
+
+  <p>Jeg er overbevist om, at dette vil være et frugtbart samarbejde for jer begge. Jeg skriver for at informere dig om, at jeg er ${student}s praktikvejleder, og hvis du har spørgsmål eller kommentarer, er du mere end velkommen til at kontakte mig.</p>
+
+  <p>Der kan i forløbet komme enkelte møder og samtaler mellem ${student} og mig. Jeg vil sætte stor pris på det, hvis praktikanten kan deltage i disse møder. Desuden skal ${student} skrive en praktikrapport ved afslutningen af forløbet. Som en del af denne praktikrapport, skal ${student} afholde et møde med dig, for at afdække hvad ${student} kan gøre for at forbedre sine karrieremuligheder i branchen fremadrettet. Denne samtale finder sted i slutningen af det officielle praktikforløb, og jeg sender mere information om dette til jer begge, når tiden nærmer sig.</p>
+
+  <p>Der er mange faktorer, som har betydning for, om praktikforløbet bliver en success. Det er vores erfaring, at de følgende gode råd kan være med til at understøtte, at praktiksamarbejdet bliver en oplevelse med godt udbytte for både virksomhed og studerende:</p>
+
+ <ul>
+  <li>Forventningsafstemning er vigtig fra begyndelsen.</li>
+
+  <li>Hvad ønsker I som virksomhed, og hvad ønsker den studerende?</li>
+
+  <li>Den studerende er i praktik for at lære. Derfor er det hensigtsmæssigt at den studerende præsenteres for både udfordrende opgaver, herunder opgaver hvor uddannelsens teori og modeller kan komme i spil, samt mere hverdagsagtige opgaver.</li>
+
+  <li>Giv den studerende adgang til de redskaber og den information, som er nødvendig, for at opgaverne kan løses optimalt.</li>
+
+  <li>Det er en god ide at knytte den studerende til en fast kontaktperson, som kan vejlede, inspirere og motivere den studerende. Jævnlige opfølgningssamtaler, hvor der evalueres både overordnet og specifikt på den studerendes virke i praktikken samt på læringsmål fra praktikkontrakten er med til at styrke udbyttet for både den studerende og virksomheden.</li>
+
+  <li>Drøft evt. med den studerende hvad der kunne være et godt emne for hovedopgaven.</li>
+
+  <li>Introducér gerne den studerende til hele virksomheden, se gerne på praktikanten som et ”fuldgyldigt” medlem af teamet.</li>
+
+  <li>Tal med den studerende eller akademiet/mig som vejleder, hvis der er noget, der ikke går som forventet.</li></ul>
+
+  <p>Jeg håber, at I får en god oplevelse med ${student} i praktik og ser frem til, at vi i fællesskab kan sikre et forløb, der gør en forskel for jer i praktikperioden, og samtidig giver værdifulde praktiske erfaringer.</p>
+
+  <p>Har I spørgsmål eller kommentarer, er I som sagt velkomne til at kontakte mig.</p>
+  `
+
+  // opretter engelsk tekst
+  resultatEN.innerHTML = `
+  <p>Dear  ${mentor},</p>
+
+  <p>I would like to thank you for offering an internship to ${student}, and being an integral part of our education. I am confident that internship will be a fruitful collaboration for both of you.</p>
+
+  <p>I am writing to let you know that I am ${student}'s internship supervisor, and if you have any questions or comments, you are more than welcome to contact me.</p>
+
+  <p>During the internship there might be a few meetings or conversations between myself and ${student}. I would greatly appreciate if ${student} could attend to these meetings. At the end of the internship the student will have to hand in an internship report. As a preparation for this internship report, ${student} must have a meeting with you in order to identify what ${student} can do in order to improve the career prospects in the future. This conversation takes place at the end of the official internship, and I will send more information about this to both of you in due time.</p>
+
+  <p>There are many factors that help the internship to be a success. It is our experience that the following advice can ensure that the internship collaboration becomes a good experience for both company and students:</p>
+
+  <ul><li>
+  Reconciliation of expectations is important from the beginning. What do you expect as a company? And what does the student expect from you in return?</li>
+
+  <li>The student goal of the internship is to learn by experience. Therefore, it is appropriate that the student is presented with both challenging tasks, including tasks where the theory and models of the education can come into play, as well as more everyday tasks.</li>
+
+  <li>Give the student access to relevant tools and the kind of information necessary for completing the tasks to be solved in the proper way.</li>
+
+  <li>It is a good idea to connect the student with a permanent contact person who can guide, inspire and motivate the student. Conduct regular follow-up interviews, where both the student's work in the internship is evaluated -  both overall and specifically with regards to the learning objectives from the internship contract. This will help to strengthen the benefits for both the student and the company.</li>
+
+  <li>Discuss potential topics for the internship report.</li>
+
+  <li>Feel free to introduce the student to the whole company, it is encouraged to look at the intern as a full-fledged member of your team.</li>
+
+  <li>Talk to the student or the academy / me as a supervisor if something does not go as expected.</li></ul>
+
+  <p>If you have questions or comments, please do not hesitate to reach out to me at any time during the internship.</p>
+
+  <p>Best regards,</p>
+
+  `
+
+
+  </script>
+</body>
+</html>
